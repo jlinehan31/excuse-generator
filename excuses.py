@@ -30,8 +30,9 @@ excuse_list = [
     'Your mom',
     'The food was bad',
     'Salt Lake is better than Provo',
-    'We don\'t care about the rivalry',
-    'Rising is Tom Brady and we didn\'t know it'
+    'We don\'t care about the "in-state" game',
+    'Rising is Tom Brady and we didn\'t know it',
+    'Colorado is our rival'
 ]
 
 st.subheader(random.choice(excuse_list))
