@@ -29,7 +29,9 @@ excuse_list = [
     'BYU is G5',
     'Your mom',
     'The food was bad',
-    'Salt Lake is better than Provo'
+    'Salt Lake is better than Provo',
+    'We don\'t care about the rivalry',
+    'Rising is Tom Brady and we didn\'t know it'
 ]
 
 st.subheader(random.choice(excuse_list))
