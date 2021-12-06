@@ -22,7 +22,14 @@ excuse_list = [
     'Talent gap',
     'Deez Nuts',
     '1/10',
-    'Covid'
+    'Covid',
+    'Ryan Smith',
+    'Leather pants',
+    'Pac-12 is the conference of champions',
+    'BYU is G5',
+    'Your mom',
+    'The food was bad',
+    'Salt Lake is better than Provo'
 ]
 
 st.subheader(random.choice(excuse_list))
