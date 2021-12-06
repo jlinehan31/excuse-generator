@@ -26,12 +26,12 @@ excuse_list = [
     'Covid'
 ]
 
-excuses = st.button('Generate another excuse')
 if excuses:
     st.subheader(random.choice(excuse_list))
 else:
     st.subheader(random.choice(excuse_list))
-
+excuses = st.button('Generate another excuse')
+    
 st.write('')
 
 fb_last_loss = date(2019, 9, 29)
