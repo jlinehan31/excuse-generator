@@ -31,7 +31,7 @@ excuses = st.button('Generate another excuse')
 
 st.write('')
 
-fb_last_loss = date(2019, 9, 29)
+fb_last_loss = date(2019, 8, 29)
 bb_last_loss = date(2019, 12, 4)
 
 col1, col2 = st.columns(2)
