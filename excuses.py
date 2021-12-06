@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import date
 import random
 
 st.title('Why BYU Beat Utah:')
@@ -22,20 +23,30 @@ excuse_list = [
     'Talent gap',
     'Deez Nuts',
     '1/10',
-    'Covid',
-    'Ryan Smith',
-    'Leather pants',
-    'Pac-12 is the conference of champions',
-    'BYU is G5',
-    'Your mom',
-    'The food was bad',
-    'Salt Lake is better than Provo',
-    'We don\'t care about the "in-state" game',
-    'Rising is Tom Brady and we didn\'t know it',
-    'Colorado is our rival'
+    'Covid'
 ]
 
-st.subheader(random.choice(excuse_list))
-st.button('Generate another excuse')
+excuses = st.button('Generate another excuse')
+if excuses:
+    st.subheader(random.choice(excuse_list))
 
+st.write('')
+
+fb_last_loss = date(2019, 9, 29)
+bb_last_loss = date(2019, 12, 4)
+
+col1, col2 = st.columns(2)
+with col1:
+    st.metric('Days Since Utah beat BYU in Football:',
+             (date.today() - fb_last_loss).days)
+with col2:
+    st.metric('Days Since Utah beat BYU in Basketball',
+             (date.today() - bb_last_loss).days)
+
+balloons = st.button('Utah Fans: Click here to celebrate')
+if balloons:
+    st.subheader('Enjoy the Rose Bowl!')
+    st.write('Please mail all championship shirts, trophies, and rings to Kalani Sitake.')
+    st.balloons()
+    
 st.markdown('Created by @jlinehan9')
