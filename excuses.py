@@ -26,12 +26,9 @@ excuse_list = [
     'Covid'
 ]
 
+excuses = st.subheader(random.choice(excuse_list))
 excuses = st.button('Generate another excuse')
-if excuses:
-    st.subheader(random.choice(excuse_list))
-else:
-    st.subheader(random.choice(excuse_list))
-    
+
 st.write('')
 
 fb_last_loss = date(2019, 9, 29)
@@ -39,10 +36,10 @@ bb_last_loss = date(2019, 12, 4)
 
 col1, col2 = st.columns(2)
 with col1:
-    st.metric('Days since Utah beat BYU in Football:',
+    st.metric('Days Since Utah beat BYU in Football:',
              (date.today() - fb_last_loss).days)
 with col2:
-    st.metric('Days since Utah beat BYU in Basketball',
+    st.metric('Days Since Utah beat BYU in Basketball',
              (date.today() - bb_last_loss).days)
 
 balloons = st.button('Utah fans click here')
