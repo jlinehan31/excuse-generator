@@ -28,10 +28,4 @@ excuse_list = [
 st.subheader(random.choice(excuse_list))
 st.button('Generate another excuse')
 
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('')
 st.markdown('Created by @jlinehan9')
