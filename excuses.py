@@ -29,6 +29,8 @@ excuse_list = [
 excuses = st.button('Generate another excuse')
 if excuses:
     st.subheader(random.choice(excuse_list))
+else:
+    st.subheader(random.choice(excuse_list))
 
 st.write('')
 
@@ -43,7 +45,7 @@ with col2:
     st.metric('Days Since Utah beat BYU in Basketball',
              (date.today() - bb_last_loss).days)
 
-balloons = st.button('Utah Fans: Click here to celebrate')
+balloons = st.button('Utah fans click here')
 if balloons:
     st.subheader('Enjoy the Rose Bowl!')
     st.write('Please mail all championship shirts, trophies, and rings to Kalani Sitake.')
